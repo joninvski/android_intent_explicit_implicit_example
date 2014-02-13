@@ -15,6 +15,7 @@ Compile
 
     # Optional
     ANDROID_HOME=/home/.../android/sdk; export ANDROID_HOME
+
     ./gradlew compileDebug
 
 Test
@@ -29,10 +30,10 @@ Code highlights
 
 When the explicit button is clicked:
 
-    // TODO - Create a new intent to launch the ExplicitlyLoadedActivity // class
-    Intent intent = new Intent(ihis, ExplicitlyLoadedActivity.class);
+    // TODO - Create a new intent to launch the ExplicitlyLoadedActivity
+    Intent intent = new Intent(this, ExplicitlyLoadedActivity.class);
 
-    // TODO - Start an Activity using that intent and the request code // defined above
+    // TODO - Start an Activity using that intent and the request code
     startActivityForResult(intent, GET_TEXT_REQUEST_CODE);
 
 
