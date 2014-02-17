@@ -1,0 +1,1 @@
+tasks.getByPath(':IntentsLab:connectedInstrumentTest').dependsOn(':MyBrowser:installDebug')

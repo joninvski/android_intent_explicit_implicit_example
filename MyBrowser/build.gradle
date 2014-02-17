@@ -3,12 +3,10 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
-        classpath 'com.stanfy.spoon:spoon-gradle-plugin:0.9.+'
+        classpath 'com.android.tools.build:gradle:0.7.3'
     }
 }
 apply plugin: 'android'
-apply plugin: 'spoon'
 
 repositories {
     mavenCentral()
@@ -25,10 +23,6 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:appcompat-v7:+'
 
-    instrumentTestCompile 'com.squareup:fest-android:1.0.+'
-    instrumentTestCompile 'org.mockito:mockito-all:1.9.5'
     instrumentTestCompile 'com.jayway.android.robotium:robotium-solo:4.3.1'
-    instrumentTestCompile 'com.squareup.spoon:spoon-client:1.0.5'
 }
